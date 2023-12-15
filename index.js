@@ -1,0 +1,15 @@
+//change icon and mode (dark mode)
+const mode = document.querySelector(".mode");
+const icon = document.querySelector(".fa-moon");
+
+mode.addEventListener("click", function () {
+  document.body.classList.toggle("dark-theme");
+
+  if (document.contains.classList("dark-theme")) {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  } else {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+});
