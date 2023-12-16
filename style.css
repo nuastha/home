@@ -35,6 +35,7 @@ header {
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
+    z-index: 1;
 }
 
 .img1 {
@@ -172,4 +173,96 @@ em {
     background-color: #1751f0;
     color: aqua;
     transition: all .3s ease-in-out;
+}
+
+/* second page start from here */
+
+.page2 {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+.page2-text {
+    display: flex;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-left: 8.6rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.my-info {
+    max-width: 95%;
+}
+
+.page2-para {
+    margin-left: 3rem;
+    line-height: 1.4;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: large;
+}
+
+.bg2 {
+    height: 99vh;
+    margin-right: 3rem;
+}
+
+.info1,
+.info2,
+.info3,
+.info4,
+.info5,
+.info6 {
+    margin-left: 5rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.page2-btn {
+    display: flex;
+    position: absolute;
+}
+
+.btn3 {
+    font-family: fantasy;
+    font-size: medium;
+    margin-top: 31rem;
+    margin-left: 17rem;
+    position: relative;
+    font-weight: 500;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    background: aquamarine;
+    text-transform: capitalize;
+}
+
+.btn4 {
+    font-family: fantasy;
+    font-size: medium;
+    margin-top: 31rem;
+    margin-left: 5rem;
+    position: inherit;
+    font-weight: 500;
+    width: 11rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    background: aquamarine;
+    text-transform: capitalize;
+}
+
+.btn4:hover,
+.btn3:hover {
+    background: lightgreen;
+    cursor: pointer;
+    color: #1751f0;
 }

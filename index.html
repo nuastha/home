@@ -8,15 +8,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>portfolio</title>
+    <title>My Portfolio</title>
   </head>
   <body>
     <header class="flex">
-      <img src="./img/logo.png" alt="" class="img1" />
+      <img
+        onclick="location.href='./index.html';"
+        src="./img/logo.png"
+        alt="logo"
+        class="img1"
+      />
       <nav class="navbar">
         <ul class="list">
           <li>
-            <a href="#">home</a>
+            <a href="./index.html">home</a>
           </li>
           <li>
             <a href="#">about</a>
@@ -28,7 +33,9 @@
             <a href="#">contact</a>
           </li>
         </ul>
-        <button type="button" class="btn2"><i class="fa-solid fa-moon mode"></i></button>
+        <button type="button" class="btn2">
+          <i class="fa-solid fa-moon mode"></i>
+        </button>
       </nav>
     </header>
     <main>
@@ -48,6 +55,52 @@
       </div>
       <button class="btn" type="submit">read more</button>
     </main>
+    <!-- secound page from here -->
+    <section class="page2">
+      <div class="page2-text">
+        <article class="my-info">
+          <h2 class="2heading">my info below here.</h2>
+          <p class="page2-para">
+            Hello, I'm dedicated to learning and growing. As an AWS Cloud
+            Practitioner, I efficiently use AWS. Excited about combining cloud
+            computing and web development for future projects. Let's create
+            something amazing!
+          </p>
+          <br />
+          <br />
+          <span class="info1">name : purna bahadur shrestha</span><br />
+          <span class="info2">country : nepal</span><br />
+          <span class="info3"
+            >study : web development and cloud practitioner.</span
+          ><br />
+          <span class="info4">email : ipurnastha@gmail.com</span><br />
+          <span class="info5"
+            >portfolio link : nuastha.github.io/homepage/</span
+          >
+          <br />
+          <span class="info6">linkedin : Purna stha</span>
+          <br />
+        </article>
+      </div>
+      <div class="page2-img">
+        <img src="./img/flag1.png" alt="bg-2" class="bg2" />
+      </div>
+      <div class="page2-btn">
+        <button
+          onclick="location.href='./doc/my cv.pdf';"
+          type="button"
+          class="btn3"
+        >
+          my cv
+        </button>
+        <button
+          onclick="location.href='./doc/AWS Certified Cloud Practitioner certificate.pdf';"
+          class="btn4"
+        >
+          AWS certificate <i class="fa fa-certificate" aria-hidden="true"></i>
+        </button>
+      </div>
+    </section>
     <footer></footer>
     <script src="index.js"></script>
   </body>
