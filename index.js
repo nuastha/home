@@ -13,3 +13,10 @@ mode.addEventListener("click", function () {
     icon.classList.add("fa-moon");
   }
 });
+//reload the home page on click home or logo
+
+const navItem = document.querySelector(".home");
+
+navItem.addEventListener("click", function () {
+  location.reload();
+});
