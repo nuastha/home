@@ -1,22 +1,58 @@
-//change icon and mode (dark mode)
-const mode = document.querySelector(".mode");
-const icon = document.querySelector(".fa-moon");
+//toggle icon navbar
 
-mode.addEventListener("click", function () {
-  document.body.classList.toggle("dark-theme");
+let menuIcon = document.querySelector ("#menu-icon");
+let navbar = document.querySelector (".navbar");
 
-  if (document.body.classList.contains("dark-theme")) {
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
-  } else {
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
-  }
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x")
+    navbar.classList.toggle("active")
+}
+
+
+
+// scroll sections active links
+
+let sections = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll("header nav a");
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
+
+        if(top >= offset && top <= offset + height) {
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                document.querySelector("header nav a[href*="+ id +"]").classList.add("active");
+            
+        });
+    };
+    });
+
+    // sticky navbar links
+
+    let header = document.querySelector("header");
+
+    header.classList.toggle("sticky", window.scrollY > 100);
+
+    //remove toggle icon and navbar when click navbar link (scroll)
+
+    menuIcon.classList.remove("bx-x")
+    navbar.classList.remove("active")
+
+};
+
+//scroll reveal 
+
+ScrollReveal({
+    reset: true,
+    distance: "80px",
+    duration: 2000,
+    delay: 200
 });
-//reload the home page on click home or logo
 
-const navItem = document.querySelector(".home");
+ScrollReveal().reveal(".home-content, .heading", { origin: "top"});
+ScrollReveal().reveal(".home-img, .services-container, form", { origin: "bottom"});
 
-navItem.addEventListener("click", function () {
-  location.reload();
-});

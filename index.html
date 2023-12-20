@@ -2,110 +2,233 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../img/code-solid.svg" type="image/svg" />
+
+    <title>Welcome | My Portfolio</title>
+
+    <!-- box-icon -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+
+    <!-- font-awesome -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+
+    <!-- custom css  -->
+
     <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
   </head>
   <body>
-    <header class="flex">
-      <img
-        onclick="location.href='./index.html';"
-        src="./img/logo.png"
-        alt="logo"
-        class="img1"
-      />
+    <!-- header design -->
+
+    <header class="header">
+      <a href="#home" class="logo">portfolio</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
-        <ul class="list">
-          <li>
-            <a href="./index.html" class="home">home</a>
-          </li>
-          <li>
-            <a href="#">about</a>
-          </li>
-          <li>
-            <a href="#">portfolio</a>
-          </li>
-          <li>
-            <a href="#">contact</a>
-          </li>
-        </ul>
-        <button type="button" class="btn2">
-          <i class="fa-solid fa-moon mode"></i>
-        </button>
+        <a href="#home" class="active">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#contact">contact</a>
       </nav>
     </header>
-    <main>
-      <!-- portfolio section -->
-      <div class="main-div">
-        <section class="text-sec">
-          <h1>hi ! i am purna.</h1>
+
+    <!-- end header design -->
+
+    <!-- home section design -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Purna B. Shrestha</h1>
+        <h3>
+          I'm a <span>Frontend Developer</span> And
+          <span>Certified AWS Cloud Practitioner</span>.
+        </h3>
+        <p>
+          Hello! I am a passionate Web developer and a certified AWS Cloud
+          Practitioner. I have a strong foundation in front-end development. As
+          a certified Cloud Practitioner, Use and manage the various services
+          offered by AWS service provider.
+        </p>
+
+        <div class="social-media">
+          <a href="https://www.facebook.com/ipurna.stha" target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/purna-s-a7a053288/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+            ><i class="bx bx-envelope"></i
+          ></a>
+        </div>
+        <a href="#about" class="btn">Read More</a>
+      </div>
+      <div class="home-img">
+        <img src="../img/bg-big1.png" alt="background images" />
+      </div>
+    </section>
+
+    <!-- end home section design -->
+
+    <!-- about section design -->
+
+    <section class="about" id="about">
+      <div class="about-div">
+        <img src="../img/flag1.png" alt="" class="about-img" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer !</h3>
+        <h3>AWS Cloud Practitioner !</h3>
+        <p>
+          Hello! I am a passionate Web developer and a certified AWS Cloud
+          Practitioner. With a strong foundation in front-end development, I am
+          adept at creating efficient, user-friendly websites and web
+          applications. As a web developer, I have a comprehensive understanding
+          of various programming languages, frameworks, and libraries. My
+          expertise includes HTML, CSS, JavaScript, and more. I am experienced
+          in responsive design, ensuring optimal user experience across various
+          devices.Being a certified Cloud Practitioner, I have a solid
+          understanding of cloud architecture and the various services offered
+          by cloud providers. I am proficient in managing and deploying
+          applications in the cloud, ensuring scalability and security.
+        </p>
+        <a href="../doc/my cv.pdf" class="btn" target="_blank">Download CV</a>
+      </div>
+    </section>
+
+    <!-- end about section design -->
+
+    <!-- services section design -->
+
+    <section class="services" id="services">
+      <h2 class="heading">What I <span>Do</span></h2>
+      <div class="services-container">
+        <div class="service-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
           <p>
-            i am a <em class="em1">web developer</em> <br />
-            <em class="em2">and</em><br />
-            <em class="em3">AWS certifed cloud practitioner</em>.
+            As a frontend developer, I have learned how to use multiple
+            programming languages which include HTML, CSS, and JavaScript to
+            develop user-friendly and mobile-friendly websites.
           </p>
-        </section>
-        <section class="bg-img">
-          <img src="./img/bg-big.png" alt="" class="img2" />
-        </section>
-      </div>
-      <button class="btn" type="submit">read more</button>
-    </main>
-    <!-- secound page from here -->
-    <section class="page2">
-      <div class="page2-text">
-        <article class="my-info">
-          <h2 class="2heading">my info below here.</h2>
-          <p class="page2-para">
-            Hello, I'm dedicated to learning and growing. As an AWS Cloud
-            Practitioner, I efficiently use AWS. Excited about combining cloud
-            computing and web development for future projects. Let's create
-            something amazing!
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-laptop"></i>
+          <h3>Cloud Computing</h3>
+          <p>
+            As a Cloud Practitioner, we will assist you with setting up,
+            managing, and ending virtual computing devices such as EC2, AWS
+            Lambda, and ECS as needed to complete tasks according to your
+            specifications.
           </p>
-          <br />
-          <br />
-          <span class="info1">name : purna bahadur shrestha</span><br />
-          <span class="info2">country : nepal</span><br />
-          <span class="info3"
-            >study : web development and cloud practitioner.</span
-          ><br />
-          <span class="info4">email : ipurnastha@gmail.com</span><br />
-          <span class="info5"
-            >portfolio link : nuastha.github.io/homepage/</span
-          >
-          <br />
-          <span class="info6">linkedin : Purna stha</span>
-          <br />
-        </article>
-      </div>
-      <div class="page2-img">
-        <img src="./img/flag1.png" alt="bg-2" class="bg2" />
-      </div>
-      <div class="page2-btn">
-        <button
-          onclick="location.href='./doc/my cv.pdf';"
-          type="button"
-          class="btn3"
-        >
-          my cv
-        </button>
-        <button
-          onclick="location.href='./doc/AWS Certified Cloud Practitioner certificate.pdf';"
-          class="btn4"
-        >
-          AWS certificate <i class="fa fa-certificate" aria-hidden="true"></i>
-        </button>
+        </div>
+
+        <div class="service-box">
+          <i class="bx bx-hdd"></i>
+          <h3>Cloud Storage</h3>
+          <p>
+            AWS Provides A Variety Of Cloud Storage Services To Meet Your
+            Specific Needs. Here are a few examples: 1.Amazon S3 (Amazon Simple
+            Storage Service) 2.Elastic File System (EFS) by Amazon There are
+            many more.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-database"></i>
+          <h3>Cloud Database</h3>
+          <p>
+            a cloud-based database that can be accessed, supplied, and installed
+            via both public and private networks. Services offered by Amazon Web
+            Services include: 1. relational database 2. non-relational database.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <i class="bx bx-network-chart"></i>
+          <h3>Cloud Networking</h3>
+          <p>
+            We are capable of setting up and maintaining your personal
+            cloud-based virtual networks. It facilitates users' secure and
+            private resource connections. The same as Route53 and AWS VPC.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-cloud"></i>
+          <h3>Cloud Services</h3>
+          <p>
+            AWS provides various services like software as a service (SaaS),
+            platform as a service (PaaS), and infrastructure as a service
+            (IaaS). We will assist with web or app integration to broaden the
+            possibilities.
+          </p>
+        </div>
       </div>
     </section>
-    <!-- page 3 start from here -->
-    <section>
-      
+
+    <!-- End Services Section -->
+
+    <!-- contact section design -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact</h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="E-mail" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="E-mail Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
     </section>
-    <footer></footer>
+
+    <!-- end contact section -->
+
+    <!-- footer section design -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Purna B. Shrestha | All Right Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- end footer section -->
+
+    <!-- scroll reveal js -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom js -->
+
     <script src="index.js"></script>
   </body>
 </html>
